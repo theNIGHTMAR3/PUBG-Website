@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>PlayerUnknown's Battlegrounds</title>
+	<meta name="description" content="Strona na temat jednej z najlepszych gier z gatunku Battle Royale!">
+	<meta name="keywords" content="PUBG, battleroyale">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles/jquery-ui.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.theme.min.css">
+
+	
+
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/imagemenu.js"> </script>
+	<script src="scripts/jquery-ui.min.js"></script>
+
+	
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="text/javascript" href="scripts/scripts.js">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+
+	<script src="scripts/timer.js"></script>
+	
+	<script>
+$(document).ready(function(){
+ $("#para td").mouseover(function(){
+  var idd=$(this).attr('id');
+  enlargeimg(idd);
+});
+$("#para td").mouseout(function(){
+    actualimg();
+});
+});
+</script>
+	
+</head>
+
+<body onload="odliczanie() ">
+
+   <header>
+   
+       <div class="logo">
+	   <a class="logoLink" href="index.html">
+	        <img class="logo" src="img/logo2.jpg" alt="PUBG"/>
+        </a>
+        </div>
+		   <a class="logoLink" href="index.html">
+
+         <div id="napis">
+                <strong>PLAYERUNKNOWN'S BATTLEGROUNDS</strong>
+          </div>
+		  </a>
+		  
+		 <nav>
+		 <ol class="menu">
+		 <li > <a href="index.html">Założenia</a> </li>
+		 <li><a href="mapy.html">Mapy</a></li>
+		 <li id="esport"> eSport
+		    <ul>
+			<li> <a href="regiony.html">Regiony </a></li>
+			<li> <a href="turnieje.html">Turnieje </a></li>
+		   </ul>
+		 </li>
+		 <li><a href="updates.html">Updates</a></li>
+		 <li> <a href="feedback.html">Feedback</a></li>
+		 </ol>
+		 </nav>
+   </header>
+   
+  <main>
+   
+   <article>
+   
+   <header class="info">
+   <h2>eSport ---> Turnieje</h2>
+   </header>
+   <section id="content">
+       <p> Na świecie rogrywanych jest wiele turniejów i zawodów w PUBG. Jednak te największe są globalne czyli rywalizują razem drużyny z całego globu. Rozpoczęły się w 2018 roku niedługo po wyjściu gry z early access'u:
+	   <ol type="I" style="line-height:250%;">
+	   <li style="line-height:200%;" id="pgi">PUBG Global Invitational 2018
+	   <ul>
+	   <li>Lokalizacja: Berlin</li>
+	   <li>Pula nagród:  $1,000,000</li>
+	   <li>Zwycięzca: OMG</li>
+	   </ul></li>
+	   <li style="line-height:200%;" id="faceit">FACEIT Global Summit: PUBG Classic
+	   <ul>
+	   <li>Lokalizacja: Londyn</li>
+	   <li>Pula nagród: $400,000</li>
+	   <li>Zwycięzca: OPR</li>
+	   </ul></li>
+	   <li style="line-height:200%;" id="pgc">PUBG Global Championship 2019
+	   <ul>
+	   <li>Lokalizacja: Los Angeles/Oakland</li>
+	   <li>Pula nagród: 	$4,000,000</li>
+	   <li>Zwycięzca: GEN G</li>
+	   </ul></li>
+	   <li style="line-height:200%;" id="pcs1">PUBG Continental Series 1
+	   <ul>
+	   <li>Lokalizacja: online</li>
+	   <li>Pula nagród: 4x$263,500</li>
+	   <li>Zwycięzcy:STK, QConfirm, TSM, iFTY</li>
+	   </ul></li>
+	   <li style="line-height:200%;" id="pcs2">PUBG Continental Series 2
+	   <ul>
+	   <li>Lokalizacja: online</li>
+	   <li>Pula nagród: 4x$200,000</li>
+	   <li>Zwycięzcy: TSG, Soniqs, FaZe, Divine</li>
+	   </ul></li>
+	   <li style="line-height:200%;" id="pcs3">PUBG Continental Series 3
+	   <ul>
+	   <li>Lokalizacja: online</li>
+	   <li>Pula nagród: 4x$200,000</li>
+	   <li>Zwycięzca: TBD</li>
+	   </ul></li>
+	   </ol>
+	   
+	   <br/>
+	   <br/>
+	   
+	   <div id="tableDiv">
+	<table id="para" >
+<tr>
+<td class="imgmenu"  style="background:url(img/pgi.jpg) repeat scroll 0%; " id="img1"><a href="#pgi">PGI</a></td>
+<td class="imgmenu"  style=" background:url(img/faceit.png) repeat scroll 0%;" id="img2" ><a href="#faceit">FACEIT</a></td>
+<td class="imgmenu"  style=" background:url(img/pgc.png) repeat scroll 0%; " id="img3" ><a href="#pgc">PGC</a></td>
+<td class="imgmenu"  style=" background:url(img/pcs1.png) repeat scroll 0%; " id="img4" ><a href="#pcs1">PCS1</a></td>
+
+</tr>
+</table>
+</div>
+	   
+   
+   </section>
+   </article>
+   
+   <aside>
+   
+   <div id="datepicker"></div>
+   
+   <div id="clock"></div>
+   </aside>
+
+</main>
+
+<footer>
+Strona została stworzona jako projekt na pierwszy rok studiów i poświęcona jest grze PlayerUnknown's Battlegrounds. <br/>&copy; Wszelkie prawa zastrzeżone.
+</footer>
+
+<script>
+$("#datepicker").datepicker();
+</script>
+</body>
+
+
+</html>

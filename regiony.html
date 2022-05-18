@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>PlayerUnknown's Battlegrounds</title>
+	<meta name="description" content="Strona na temat jednej z najlepszych gier z gatunku Battle Royale!">
+	<meta name="keywords" content="PUBG, battleroyale">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles/jquery-ui.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.theme.min.css">
+	
+	
+
+	
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="text/javascript" href="scripts/scripts.js">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+
+	<script src="scripts/timer.js"></script>
+	<script src="scripts/theme.js"></script>
+	
+	<script src="scripts/jquery.js"></script>
+
+<script src="scripts/jquery-ui.min.js"></script>
+	
+</head>
+
+<body id="body" onload="odliczanie(); onSwitch();">
+
+   <header >
+   
+       <div class="logo">
+	   <a class="logoLink" href="index.html">
+	        <img class="logo" src="img/logo2.jpg" alt="PUBG"/>
+        </a>
+        </div>
+		   <a class="logoLink" href="index.html">
+
+         <div id="napis">
+                <strong>PLAYERUNKNOWN'S BATTLEGROUNDS</strong>
+          </div>
+		  </a>
+		  
+		 <nav>
+		 <ol class="menu">
+		 <li > <a href="index.html">Założenia</a> </li>
+		 <li><a href="mapy.html">Mapy</a></li>
+		 <li id="esport"> eSport
+		    <ul>
+			<li> <a href="regiony.html">Regiony </a></li>
+			<li> <a href="turnieje.html">Turnieje </a></li>
+		   </ul>
+		 </li>
+		 <li><a href="updates.html">Updates</a></li>
+		 <li> <a href="feedback.html">Feedback</a></li>
+		 </ol>
+		 </nav>
+   </header>
+   
+  <main>
+   
+   <article id="article">
+   
+   <header class="info">
+   <h2>eSport ---> Regiony</h2>
+   </header>
+   
+   <section id="content">
+   
+   <h3>Omówienie regionów</h3>
+    Servery PlayerUnknown's Battlegrounds są rozmieszczone tak, aby każdy na świecie mógł cieszyć się z rogrywki. Jednak w eSporcie wydzieliły się 4 regiony, gdzie gra jest najbardziej popularna. W każdym 16 najlepszych drużyn rywalizuje o tytuł ten najlepszej oraz o wielkie pieniądze z puli nagród. Są to nastepująco:<br/>
+	<ul>
+	<li> ASIA </li>
+	<li> NORTH AMERICA</li>
+	<li> APAC</li>
+	<li> EUROPE</li>
+	</ul>
+	<br/>
+	<p>
+	W Ameryce Północnej startują tylko drużyny ze Stanów Zjednoczonych oraz Kanady. Kraje z Ameryki Łacińskiej i Południowej również mogą brac uczestnictwo w tym regionie, lecz żadna drużyna nie zakwalifikowała się na ostatnie wielkie turnieje. Ten region uchodzi za najłatwiejszy do wygrania, ponieważ umiejętności zawodników z Ameryki Północnej jest nizszy niż w innych regionach</p>
+	<br/>
+	<p>W Europie mogą walczyć drużyny ze wszystich krajów starego kontytentu, lecz tylko 16 najlepszych dostanie się do ostatecznego turnieju. Niestety, żaden polski zepół nie bierze udziału w rogrywkach. Przodują tutaj Niemcy, Francja oraz Rosja. Jednak prawie część składów to mieszanka graczy z różnych krajów. </p>
+	<br/>
+	<p>W regionie Azji walczą tylko drużyny z Chin, Japonii, Korei Południowej i Taiwanu. Właśnie tutaj można zauważyć najwyższy poziom umiejętności graczy. PUBG jest szalenie popularne w krajach azjatyckich, więc najwięcej turnieji jest rozgrywanych w tym regionie. Oczywiście stawki oraz pieniądze w puli nagród są tutaj najlepsze.</p>
+	<br/>
+	<p>W regionie APAC widać największą różnorodność w narodowościach. Rywalizują tutaj drużyny z krajów takich jak: Wietnam, Indonezja, Filipiny, Tajlandia, Oceania czy Malezja. W tym regionie najciężej o wyszukanie meczu, przez ogromne odległości miedzy krajami. Często gry szuka się tam ponad 5minut. Dzięki wielkim turniejom, topowe drużyny maja szansę powalczyć miedzy sobą na najwyżym poziomie.</p>
+	<br/>
+	<p>Poszczególne drużyny oraz największe turnieje zostały omówione na nastepnej stronie</p>
+
+   </section>
+   </article>
+   
+   <aside id="aside">
+   
+   <div id="datepicker"></div>
+   
+   <div id="clock"></div>
+   
+   <div class="przycisk">
+   <button id="but">schowaj/pokaż zegar</button>
+   </div>
+   
+   <div class="przycisk" onload="onSwitch()">
+   <button id="theme" onclick="themeSwitch()">light theme</button>
+   </div>
+   </aside>
+
+</main>
+
+<footer>
+Strona została stworzona jako projekt na pierwszy rok studiów i poświęcona jest grze PlayerUnknown's Battlegrounds. <br/>&copy; Wszelkie prawa zastrzeżone.
+</footer>
+
+<script>
+$(document).ready(function()
+{
+   $('#but').on('click',function(){
+          $('#clock').toggle();
+	});
+});
+</script>
+
+<script>
+$("#datepicker").datepicker();
+</script>
+
+</body>
+
+</html>
