@@ -1,0 +1,364 @@
+﻿html
+{
+	background:url(../img/bg1.jpg) center fixed ;
+
+	background-size:cover;
+	
+	animation-name: zmiana_tla;
+	animation-duration: 200s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes zmiana_tla
+{
+	0% {background:url(../img/bg1.jpg)  center fixed; }
+	18% {background:url(../img/bg1.jpg)  center fixed; }
+	20% {background:url(../img/bg2.jpg)  center fixed; }
+	38% {background:url(../img/bg2.jpg)  center fixed; }
+	40% {background:url(../img/bg3.jpg)  center fixed;}
+	58% {background:url(../img/bg3.jpg)  center fixed; }
+	60% {background:url(../img/bg4.png)  center fixed;}
+	78% {background:url(../img/bg4.png) center fixed ;}
+	80% {background:url(../img/bg5.jpg) center fixed;}
+	98% {background:url(../img/bg5.jpg)  center fixed; }
+}
+
+body
+{
+	width:1200px;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#body
+{
+	width:1200px;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo
+{
+	text-align: center;
+	margin-top:-5px;
+	border-radius: 5px;
+	height: 300px;
+	
+}
+.logoLink
+{
+	text-decoration:none;
+	color: white;
+}
+#napis
+{ 
+    background-color: #2F3336;
+    text-align: center;
+	font-size: 45px;
+	letter-spacing: 3px;
+    border: 1px solid #ffffff;
+	border-radius: 5px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+nav
+{
+
+	width: 1200px;
+}
+article
+{
+	
+	float:left;
+	background-color: #2F3336;
+	width: 800px;
+	padding: 25px;
+	padding-top: 20px;
+	border-radius: 5px;
+	margin-bottom:8px;
+}
+#article
+{
+	
+	float:left;
+	background-color: #2F3336;
+	width: 800px;
+	padding: 25px;
+	padding-top: 20px;
+	border-radius: 5px;
+	margin-bottom:8px;
+}
+.info
+{
+	border-bottom: 1px dashed white;
+	
+}
+#content
+{	
+	text-align: justify;
+	margin-top:20px;
+	
+}
+
+#pictures
+{
+	justify-content: space-around;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+aside
+{
+	float:left;
+	background-color: #2F3336;
+	width:312px;
+	border-radius: 5px;
+	margin-left:8px;
+	margin-bottom:8px;
+	padding: 15px;
+}
+
+#clock
+{
+	border: 1px solid white;
+	border-radius: 5px;
+	height:70px;
+	text-align:center;
+	font-size:50px;
+	padding: 10px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.logbar
+{
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align:center;
+	padding: 10px;
+	margin-top:10px;
+}
+
+.error 
+{
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.photo
+{
+	background-color: #2F3336;
+	text-align: center;
+	width:210px;
+	margin: 10px 0;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding:10px;
+	box-sizing: border-box;
+	justify-content: space-around;
+	
+	display: flex;
+	flex-wrap:wrap;
+}
+.photo img
+{
+	border-radius: 5px;
+	width:190px;
+
+}
+
+.gallery {
+	background-color: #2F3336;
+	text-align: center;
+	width: 210px;
+	margin: 10px 0;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery img {
+		border-radius: 5px;
+		width: 190px;
+}
+figcaption
+{
+	font-size: 20px;
+	text-align:center;
+}
+
+.photo:hover
+{
+	opacity:1;
+	transition: 0.3s all linear;
+	transform: scale(2);
+	
+}
+
+.tab, td, th
+{
+	width:800px;
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid white;
+	padding:10px;
+	border-radius: 5px;
+}
+.link
+{
+	text-decoration:none;
+}
+.link > h3
+{
+	text-decoration:none;
+	color: black;
+	margin:0px;
+	padding:20px;
+}
+.link > h3:hover
+{
+	color:white;
+	background-color:orange;
+}
+.linkDiv
+{
+	display:block;
+	background-color:green;
+	width: 220px;
+	border-radius:5px; 
+	text-align:center;
+	margin-top:20px;
+	margin-right:0px;
+}
+.row
+{
+	margin:20px 10px;
+}
+.col 
+{
+	display:inline-block;
+	margin: 0 10px;
+}
+.przycisk
+{
+	margin: 8px;
+	text-align:center;
+}
+#messages
+{
+	border:1px solid white;
+	border-radius:5px;
+	padding: 10px;
+	margin-top:20px;
+}
+#messList > li
+{
+	max-width:200px;
+}
+
+.imgmenu{cursor:pointer;float:left; width:80px;height:400px;border-color:white;border-style:solid;border-right-width:2px;border-left-width:0px;border-top-width:0px;border-bottom-width:0px;color:white;text-align:center;
+background: repeat: scroll 0%;
+}
+.imgmenu a{
+text-decoration:none;
+font-family: Monaco, Verdana, Sans-serif;
+font-size: 13px;
+color:white;
+font-weight:bold;
+}
+footer
+{
+	clear:both;
+	color: #efefef;
+	background-color: black;
+	text-align:center;
+	padding-bottom:10px;
+	padding-top:10px;
+	border-radius: 5px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+                        /* część gówna menu*/
+.menu {
+	
+	    margin-top: 8px;
+	    margin-bottom: 8px;
+        list-style-type:none;
+		padding: 8px;
+        background-color:#FDD700;
+        font-size:18px;
+		text-align:center;
+        height:40px;
+        line-height:200%;
+		border: 3px solid black;
+		border-radius: 5px;
+}
+     .menu a {
+        display:block;
+        text-decoration:none;
+        color:#000;
+		height:40px;
+		
+	 }
+      .menu > li {
+		border-left: 1px solid black;
+        float:left;
+		width: 232px;
+        background-color:#FDD700;
+        height:40px;
+      }
+      .menu > li:first-child {
+        border-left:0;
+		margin-left: 0px;
+      }
+      .menu > li:hover {
+        background-color:#ff9933;
+		cursor:pointer;
+      }
+      
+      .menu > li:hover > ul {
+        display:block;
+      }
+	  #esport
+	  {
+		  color:#000;
+	  }
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+      .menu > li > ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+      .menu > li > ul > li {
+        position:relative;
+        background-color:#FDD700;
+      }
+      .menu > li > ul > li > a {
+        border-top:1px solid black;
+      }
+      .menu > li > ul > li:hover {
+        background-color:#ff9933;
+      }
+	  
+@media only screen and (max-width: 1200px) {
+	body {  width:90%;}
+	article { width:94%;}
+	footer {width:100%;}
+	aside {display:none;}
+	nav {max-width:98%;}
+	.menu {width:100%;}
+	
+	.menu > li { width: 19%; }
+	.tab {width: 100%;}
+  
+}
